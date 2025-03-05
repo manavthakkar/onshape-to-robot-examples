@@ -6,7 +6,7 @@ from onshape_to_robot.message import bright, error, info
 examples = [
     "2wheels_urdf", "2wheels_mujoco",
     "adjustable_height_arm_urdf", "adjustable_height_arm_mujoco",
-    "omnidirectional_urdf", "omnidirectional_mujoco",
+    "rsk_urdf", "rsk_mujoco",
     "quadruped_urdf", "quadruped_mujoco",
     "dog_urdf", "dog_mujoco",
     "sigmaban2019_urdf", "sigmaban2019_mujoco",
