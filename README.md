@@ -60,27 +60,25 @@ Description: Robot with 4 degrees of freedom, one prismatic (linear) joint and 3
     * There is one frame (`frame_tip`) attached to the tip of the arm
     * Collisions mesh are ignored using `no_collision_meshes`
 
-### Omnidirectional
+### Robot-soccer-kit omnidirectional
 
-<a href=".imgs/robot-omnidirectional.png">
-<img src=".imgs/robot-omnidirectional.png" width=256>
+<a href=".imgs/robot-rsk.png">
+<img src=".imgs/robot-rsk.png" width=256>
 </a>
 
-Description: Example of omnidirectional robot using omni wheels (holonomic)
+Description: an omnidirectional robot from the [robot-soccer-kit](https://robot-soccer-kit.github.io/) project.
 
 * Give it a try
-    * `onshape-to-robot-bullet omnidirectional_urdf`
-    * `onshape-to-robot-mujoco omnidirectional_mujoco`
-* [Onshape design](https://cad.onshape.com/documents/11c3398e78edfadf952cbdbc/w/4428506b5bb6358b44ff6764/e/975412fdc0fd0ba9ca2cf7b6)
+    * `onshape-to-robot-bullet rsk_urdf`
+    * `onshape-to-robot-mujoco rsk_mujoco`
+* [Onshape design](https://cad.onshape.com/documents/81e7adfaf4d8d74f2936fbd5/w/97141f458dee8c3b80cbf3d2/e/5e1ff591ff562de3da8ed2af)
 * `config.json`
-    * [urdf](omnidirectional_urdf/config.json)
-    * [mujoco](omnidirectional_mujoco/config.json)
+    * [urdf](rsk_urdf/config.json)
+    * [mujoco](rsk_mujoco/config.json)
 * **Notes**:
     * In MuJoCo, passive wheels are marked as unactuated.
+    * In URDF, fixed links are added to the base, mostly to preserve colors in pyBullet.
     * Each small wheel is a degree of freedom. This approach is tedious and likely sub-optimal to simulate such robot.
-    * There is a frame (`frame_body`) in the very center of the robot. A visual arrow is part of the plate to indicate the
-  front (axis X) of the robot.
-
 
 ### Quadruped
 
