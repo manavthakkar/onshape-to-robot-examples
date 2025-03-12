@@ -18,7 +18,10 @@ def process_example(example: str):
     print('')
     print(bright(f"========== Running {example} =========="))
     print("")
-    
+
+    # Ensuring scene is re-generated    
+    os.system(f"rm {example}/scene.xml")
+
     result = os.system(f"python -m onshape_to_robot.export {example}")
     if result == 0:
         if "urdf" in example:
