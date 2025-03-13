@@ -8,12 +8,14 @@
 
 	"joint_properties": {
 		"*passive*": {
-			"actuated": false
+			"actuated": false,
+			"range": false
 		},
 		"*wheel*": {
 		   "type": "velocity",
 		   "limits": [-16, 16],
-		   "kv": 5.0
+		   "kv": 5.0,
+     		   "range": false
 		},
 		"kicker": {
      		   "range": true,
