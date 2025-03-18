@@ -168,9 +168,11 @@ Description: [MoMo](https://tuhh-itl.github.io/MoMo/) is a modular mobile robot 
 
 * Give it a try:
     * `onshape-to-robot-bullet momo_urdf`
+    * `onshape-to-robot-mujoco momo_mujoco`
 * [Onshape design](https://cad.onshape.com/documents/0f7ba08d49760d832652e76c/w/f802382a554ac4e5d967eb06/e/176c79e9883e5c00c7190ba1)
 * `config.json`
     * [urdf](momo_urdf/config.json)
+    * [mujoco](momo_mujoco/config.json)
 * **Notes:**
     * Each wheel has 12 rollers, each of them is a degree of freedom
     * Collisions are approximated using OpenScad manual approximation
